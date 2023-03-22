@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina Turma Noite</title>
+    </head>
+    <body>
+        <p>Resultado da Soma é:</p>
+        <p id="resultado"></p>
+
+        <br>
+        <button onclick="main()">Somar</button>
+
+        <script>
+            function somar(valorUm, valorDois) {
+                return valorUm + valorDois
+            }
+
+            function main() {
+                console.log('Hello World')
+
+                var numeroUm = 1;
+                var numeroDois = 2;
+
+                if (true) {
+                    let variavelDoIf = "valor do if"
+
+                    variavelDoIf = 10
+                    console.log('o Valor da variavel if é:', variavelDoIf)
+                }
+            
+                const resultado = somar(numeroUm, numeroDois)
+                console.log('O resultado da soma', resultado)
+                console.log('NumeroUm tem o valor: ', numeroUm)
+
+                document.getElementById("resultado").innerHTML = resultado
+            }
+        </script>
+    </body>
+</html>
